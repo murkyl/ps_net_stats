@@ -1,0 +1,21 @@
+---
+# The format of this file is as follows:
+#
+#- cluster:
+#    user: ""
+#    endpoint: ""
+#- cluster:
+#    user: ""
+#    endpoint: ""
+#
+# Provide the user name for each cluster that will be monitored
+# The endpoint can be an IP address or FQDN with the port number if required
+# The script will assume that SSH passwordless is enabled for the user
+# specified and that the "ssh" command is available to call.
+#
+- cluster:
+    user: "rbac_user"
+    endpoint: "192.168.1.50:8080"
+- cluster:
+    user: "other_user"
+    endpoint: "192.168.1.70:8080"
